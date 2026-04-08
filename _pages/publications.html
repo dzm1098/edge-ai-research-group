@@ -1,0 +1,33 @@
+---
+title: "Publications"
+layout: default
+excerpt: "Selected publications from the Edge AI Research Group"
+sitemap: false
+permalink: /publications/
+---
+
+<div class="col-sm-12">
+    <h1>{{page.title}}</h1>
+
+    {% for publi in site.data.publications %}
+        <section class="publication-card">
+            {% assign authors = "" | split:"/" %}
+            {% for author in publi.author %}
+                {% assign full_name = author.given | append: " " | append: author.family %}
+                {% assign authors = authors | push: full_name %}
+            {% endfor %}
+
+            <span class="publication-meta">{{ publi.container-title }} · {{ publi.issued.date-parts[0][0] }}</span>
+            <h3>{{ publi.title }}</h3>
+            <p class="publication-authors">{{ authors | array_to_sentence_string }}</p>
+            <p>{{ publi.abstract }}</p>
+            <p class="publication-actions">
+                {% if publi.URL %}
+                    <a class="btn btn-default" href="{{ publi.URL }}" target="_blank" rel="noopener">Open paper</a>
+                {% elsif publi.DOI %}
+                    <a class="btn btn-default" href="https://doi.org/{{ publi.DOI }}" target="_blank" rel="noopener">Open paper</a>
+                {% endif %}
+            </p>
+        </section>
+    {% endfor %}
+</div>

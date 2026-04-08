@@ -1,0 +1,44 @@
+<aside>
+  <section class="sidebar-card">
+    <p class="sidebar-label">Contact</p>
+    <h3>{{ site.pi_name }}</h3>
+    <p>
+      {{ site.pi_role }}<br>
+      {{ site.institution }}<br>
+      {{ site.location }}
+    </p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      <strong>Phone:</strong> {{ site.phone }}<br>
+      <strong>Office:</strong> {{ site.office }}
+    </p>
+    <p>
+      <a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a><br>
+      <a href="{{ site.url }}{{ site.baseurl }}/team/">View profile and team</a>
+    </p>
+  </section>
+
+  <section class="sidebar-card">
+    <p class="sidebar-label">Latest News</p>
+    <h3>Recent Updates</h3>
+    <ul class="sidebar-news">
+      {% for article in site.data.news limit: 5 %}
+        <li>
+          <span class="news-date">{{ article.date }}</span>
+          <strong>{{ article.title }}</strong>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ site.url }}{{ site.baseurl }}/news/">See all news</a></p>
+  </section>
+
+  <section class="sidebar-card">
+    <p class="sidebar-label">Openings</p>
+    <h3>Prospective Students</h3>
+    <p>
+      The public group status currently says there are no funded openings, but
+      this page will be kept up to date as the lab grows.
+    </p>
+    <p><a href="{{ site.url }}{{ site.baseurl }}/openings/">Read the latest note</a></p>
+  </section>
+</aside>

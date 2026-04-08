@@ -1,0 +1,46 @@
+<div id="footer" class="panel">
+  <div class="panel-footer footer-panel">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<p class="footer-heading">{{ site.title }}</p>
+				<p>
+					{{ site.tagline }}. The group studies hierarchical inference,
+					offloading, Age of Information, and learning-enabled systems at the
+					network edge.
+				</p>
+			</div>
+
+			<div class="col-sm-4">
+				<p class="footer-heading">Links</p>
+				<ul class="list-unstyled">
+					<li><a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>
+					<li><a href="{{ site.repository_url }}" target="_blank" rel="noopener">GitHub Repository</a></li>
+					<li><a href="{{ site.current_site_url }}" target="_blank" rel="noopener">Previous Google Site</a></li>
+					<li><a href="https://www.uvic.ca/" target="_blank" rel="noopener">University of Victoria</a></li>
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p class="footer-heading">Contact</p>
+				<p>
+					{{ site.pi_name }}<br>
+					{{ site.pi_role }}<br>
+					{{ site.institution }}<br>
+					{{ site.location }}<br>
+					Office: {{ site.office }}<br>
+					Phone: {{ site.phone }}<br>
+					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">Copyright {{ site.copyright_year }} {{ site.title }}</p>
+		</div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>

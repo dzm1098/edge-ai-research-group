@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hierarchical-inference-offload-queue",
+    "title": "Hierarchical Inference with an Offload Queue",
+    "container-title": "INFOCOM 2026",
+    "abstract": "Queueing-theoretic models for hierarchical inference that jointly optimize accuracy and delay under offload constraints.",
+    "URL": "https://drive.google.com/file/d/1XXPzOzJxrvIoTCtX1iMRDHhuSsbVbO4F/view?usp=sharing",
+    "author": [
+      { "family": "Nomula", "given": "S." },
+      { "family": "Parag", "given": "P." },
+      { "family": "Ganesh", "given": "A. J." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2026]] }
+  },
+  {
+    "id": "cost-sensitive-binary-classification",
+    "title": "Inference Offloading for Cost-Sensitive Binary Classification at the Edge",
+    "container-title": "AAAI 2026",
+    "abstract": "A two-threshold online learning policy for edge inference offloading that remains effective under out-of-distribution data.",
+    "URL": "https://arxiv.org/abs/2509.15674",
+    "author": [
+      { "family": "Moothedath", "given": "V. N." },
+      { "family": "Agarwal", "given": "U." },
+      { "family": "Gross", "given": "J. R." },
+      { "family": "Champati", "given": "J. P." },
+      { "family": "Moharir", "given": "S." }
+    ],
+    "issued": { "date-parts": [[2026]] }
+  },
+  {
+    "id": "tiny-falls-short",
+    "title": "Exploring the Boundaries of On-Device Inference: When Tiny Falls Short, Go Hierarchical",
+    "container-title": "IEEE IoT Journal 2025",
+    "abstract": "Extensive energy, latency, and communication measurements of tinyML models across Arduino, ESP32, Coral, Raspberry Pi, and Jetson platforms.",
+    "URL": "https://arxiv.org/abs/2407.11061",
+    "author": [
+      { "family": "Behera", "given": "A. P." },
+      { "family": "Daubaris", "given": "P." },
+      { "family": "Bravo", "given": "I." },
+      { "family": "Gallego", "given": "J." },
+      { "family": "Morabito", "given": "R." },
+      { "family": "Widmer", "given": "J." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2025]] }
+  },
+  {
+    "id": "stochastically-partitioning-experts",
+    "title": "Online Learning with Stochastically Partitioning Experts",
+    "container-title": "UAI 2025",
+    "abstract": "New regret bounds for expert-based online learning when the expert partition changes stochastically over time.",
+    "URL": "https://openreview.net/forum?id=DbOqN3kGVb",
+    "author": [
+      { "family": "Datta", "given": "P." },
+      { "family": "Moharir", "given": "S." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2025]] }
+  },
+  {
+    "id": "regret-bounds-hierarchical-inference",
+    "title": "Regret Bounds for Online Learning for Hierarchical Inference",
+    "container-title": "MobiHoc 2024",
+    "abstract": "Introduces regret-optimal learning algorithms for offload decisions in hierarchical inference under adversarial conditions.",
+    "URL": "https://drive.google.com/file/d/1E3kFRehHEOc9cvXf5IT2YkBeRd4t46v5/view?usp=sharing",
+    "author": [
+      { "family": "Al-Atat", "given": "G." },
+      { "family": "Datta", "given": "P." },
+      { "family": "Moharir", "given": "S." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2024]] }
+  },
+  {
+    "id": "best-of-both-worlds",
+    "title": "Getting the Best Out of Both Worlds: Algorithms for Hierarchical Inference at the Edge",
+    "container-title": "IEEE TMLCN 2024",
+    "abstract": "Foundational formulation of hierarchical inference with threshold-based and learning-based offload algorithms.",
+    "URL": "https://arxiv.org/pdf/2304.00891.pdf",
+    "author": [
+      { "family": "Moothedath", "given": "V. N." },
+      { "family": "Champati", "given": "J. P." },
+      { "family": "Gross", "given": "J." }
+    ],
+    "issued": { "date-parts": [[2024]] }
+  },
+  {
+    "id": "improved-decision-module",
+    "title": "Improved Decision Module Selection for Hierarchical Inference in Resource-Constrained Edge Devices",
+    "container-title": "MobiCom Workshop 2023",
+    "abstract": "Practical decision-module design for choosing when to offload on resource-constrained hardware.",
+    "URL": "https://drive.google.com/file/d/1N3xeJM2sHPSwBlBAY_oX0aIj0kVULRIG/view?usp=sharing",
+    "author": [
+      { "family": "Behera", "given": "A. P." },
+      { "family": "Morabito", "given": "R." },
+      { "family": "Widmer", "given": "J." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2023]] }
+  },
+  {
+    "id": "case-for-hierarchical",
+    "title": "The Case for Hierarchical Deep Learning Inference at the Network Edge",
+    "container-title": "NetAI Workshop, MobiSys 2023",
+    "abstract": "Position paper arguing for hierarchical inference as a first-class primitive in edge intelligence systems.",
+    "URL": "https://arxiv.org/abs/2304.11763",
+    "author": [
+      { "family": "Al-Atat", "given": "G." },
+      { "family": "Fresa", "given": "A." },
+      { "family": "Behera", "given": "A. P." },
+      { "family": "Moothedath", "given": "V. N." },
+      { "family": "Gross", "given": "J." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2023]] }
+  },
+  {
+    "id": "offloading-time-constraint",
+    "title": "Offloading Algorithms for Maximizing Inference Accuracy on Edge Device Under a Time Constraint",
+    "container-title": "IEEE TPDS 2023",
+    "abstract": "Approximation algorithms for maximizing inference accuracy under strict latency constraints on edge devices.",
+    "URL": "https://ieeexplore.ieee.org/document/10105465",
+    "author": [
+      { "family": "Fresa", "given": "A." },
+      { "family": "Champati", "given": "J. P." }
+    ],
+    "issued": { "date-parts": [[2023]] }
+  }
+]
