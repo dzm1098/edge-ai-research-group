@@ -2,36 +2,10 @@
 layout: default
 ---
 
-<div id="homeid" class="col-sm-8 ml-0 nopadding-left">
-	<section class="hero-panel">
-		<div class="row">
-			<div class="col-sm-4 text-center">
-				<img src="{{ site.url }}{{ site.baseurl }}/{{ site.hero_image }}"
-				     alt="{{ site.pi_name }}"
-				     class="img-responsive hero-portrait" />
-			</div>
-
-			<div class="col-sm-8">
-				<p class="hero-eyebrow">{{ site.title }}</p>
-				<h1 class="hero-title">{{ site.pi_name }}</h1>
-				<p class="hero-role">{{ site.pi_role }}, {{ site.institution }}</p>
-				<p class="hero-summary">
-					We develop the algorithmic foundations of Edge AI systems, with a
-					focus on hierarchical inference, inference offloading, online
-					learning, and information freshness in networked systems.
-				</p>
-				<div class="hero-links">
-					<a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/research/">Explore Research</a>
-					<a class="btn btn-default" href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>
-					<a class="btn btn-default" href="{{ site.url }}{{ site.baseurl }}/openings/">Openings</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
+<div id="homeid" class="col-sm-8 nopadding-left">
 	{{ content }}
 </div>
 
-<div id="newsid" class="col-sm-4 nopadding-right" >
+<div id="newsid" class="col-sm-4 nopadding-right">
 	{% include home-sidebar.html %}
 </div>

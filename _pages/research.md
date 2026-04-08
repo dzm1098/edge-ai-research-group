@@ -6,8 +6,10 @@ sitemap: false
 permalink: /research/
 ---
 
-<section class="research-section">
-  <h2>Overview</h2>
+<div id="textid" class="col-sm-12">
+  <h1>Research</h1>
+
+  <h3>Overview</h3>
   <p>
     We are interested in decision-making, learning, and resource
     allocation/scheduling problems that arise in networking and information
@@ -20,10 +22,8 @@ permalink: /research/
     algorithms, queueing theory, stochastic network calculus, and Markov
     decision processes.
   </p>
-</section>
 
-<section class="research-section">
-  <h2>Hierarchical and Cascade AI</h2>
+  <h3>Hierarchical and Cascade AI</h3>
   <p>
     AI is most useful when it runs where data is created, but the models that
     fit on tiny devices are often weaker than their cloud counterparts. We are
@@ -35,13 +35,11 @@ permalink: /research/
     regret-optimal offloading, and practical decision modules for
     resource-constrained hardware.
   </p>
-  <p class="research-links">
+  <p>
     <a href="{{ site.url }}{{ site.baseurl }}/publications/">See selected publications</a>
   </p>
-</section>
 
-<section class="research-section">
-  <h2>Inference Offloading and Edge Systems</h2>
+  <h3>Inference Offloading and Edge Systems</h3>
   <p>
     We design algorithms for deciding when to run models on-device, when to
     use an edge server, and when to escalate to the cloud. The goal is to
@@ -53,10 +51,8 @@ permalink: /research/
     offloading under time constraints, and offload queues for hierarchical
     inference.
   </p>
-</section>
 
-<section class="research-section">
-  <h2>Age of Information</h2>
+  <h3>Age of Information</h3>
   <p>
     Information freshness matters in distributed sensing, monitoring, and
     control. We study Age of Information as a systems and modeling problem,
@@ -66,14 +62,12 @@ permalink: /research/
     Our recent work includes spatio-temporal sensing processes and broader
     freshness-aware network analysis.
   </p>
-</section>
 
-<section class="research-section">
-  <h2>Online Learning and Routing</h2>
+  <h3>Online Learning and Routing</h3>
   <p>
     We also study online learning formulations that arise in adaptive routing
     and hierarchical inference. This includes regret bounds, stochastic expert
     partitioning, and learning policies that remain robust under uncertainty
     and distribution shift.
   </p>
-</section>
+</div>

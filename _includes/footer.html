@@ -1,42 +1,32 @@
 <div id="footer" class="panel">
-  <div class="panel-footer footer-panel">
+  <div class="panel-footer">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
-				<p class="footer-heading">{{ site.title }}</p>
 				<p>
-					{{ site.tagline }}. The group studies hierarchical inference,
-					offloading, Age of Information, and learning-enabled systems at the
-					network edge.
+					&copy; {{ site.copyright_year }} {{ site.title }}. Site built with
+					<a href="https://jekyllrb.com">Jekyll</a> and based on the
+					<a href="https://github.com/ericdaat/research-lab-website">research lab website template</a>.
 				</p>
 			</div>
-
 			<div class="col-sm-4">
-				<p class="footer-heading">Links</p>
-				<ul class="list-unstyled">
-					<li><a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>
-					<li><a href="{{ site.repository_url }}" target="_blank" rel="noopener">GitHub Repository</a></li>
-					<li><a href="{{ site.current_site_url }}" target="_blank" rel="noopener">Previous Google Site</a></li>
-					<li><a href="https://www.uvic.ca/" target="_blank" rel="noopener">University of Victoria</a></li>
-				</ul>
-			</div>
-
-			<div class="col-sm-4">
-				<p class="footer-heading">Contact</p>
 				<p>
-					{{ site.pi_name }}<br>
-					{{ site.pi_role }}<br>
-					{{ site.institution }}<br>
-					{{ site.location }}<br>
-					Office: {{ site.office }}<br>
-					Phone: {{ site.phone }}<br>
-					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+					We are part of the
+					<a href="https://www.uvic.ca/ecs/computerscience/">Department of Computer Science</a>
+					at the <a href="https://www.uvic.ca/">University of Victoria</a>.
+					Our work focuses on Edge AI, hierarchical inference, inference
+					offloading, Age of Information, and learning-enabled systems.
 				</p>
 			</div>
-		</div>
-
-		<div class="row mt-3">
-			<p class="text-center">Copyright {{ site.copyright_year }} {{ site.title }}</p>
+			<div class="col-sm-4">
+				Contact:<br />
+				{{ site.pi_name }}<br />
+				{{ site.pi_role }}<br />
+				{{ site.office }}<br />
+				{{ site.location }}<br />
+				<a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+				{{ site.phone }}
+			</div>
 		</div>
 	</div>
   </div>

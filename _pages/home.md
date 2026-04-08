@@ -6,72 +6,78 @@ sitemap: false
 permalink: /
 ---
 
-<section class="page-section">
-  <h2>About the Group</h2>
-  <p>
-    The Edge AI Research Group is led by Jaya Prakash Champati in the
-    Department of Computer Science at the University of Victoria. Our work
-    studies decision-making, learning, and resource allocation problems that
-    arise in networking and information systems, with a current emphasis on
-    reliable and efficient AI at the edge.
-  </p>
-  <p>
-    Jaya received his PhD from the University of Toronto in 2017, after
-    earlier degrees from IIT Bombay and NIT Warangal. Before joining UVic, he
-    was a Research Assistant Professor at IMDEA Networks Institute and a
-    postdoctoral researcher at KTH Royal Institute of Technology.
-  </p>
-</section>
+{% assign latest_news = site.data.news | first %}
 
-<section class="page-section">
-  <h2>Research Themes</h2>
-  <p>
-    We are interested in the mathematical and systems foundations that make
-    edge intelligence practical in real deployments.
-  </p>
-  <div class="topic-grid">
-    <div class="topic-card">
-      <h3>Hierarchical Inference</h3>
-      <p>
-        Device-edge-cloud pipelines that balance latency, cost, and accuracy
-        through principled offloading and decision policies.
-      </p>
+<h1>Welcome to the Edge AI Research Group</h1>
+
+<p><strong>News ({{ latest_news.date }}): {{ latest_news.title }}</strong></p>
+
+<p>
+  The Edge AI Research Group is led by
+  <a href="{{ site.url }}{{ site.baseurl }}/team/jaya-prakash-champati">Jaya Prakash Champati</a>
+  in the Department of Computer Science at the University of Victoria.
+</p>
+
+<p>
+  We study decision-making, learning, and resource allocation problems in
+  networking and information systems. Our current interests include Edge AI,
+  hierarchical inference, inference offloading, Age of Information, online
+  learning, and network-aware decision systems.
+</p>
+
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/slider/slider-image.png" alt="Research group placeholder image" />
     </div>
-    <div class="topic-card">
-      <h3>Inference Offloading</h3>
-      <p>
-        Algorithms for deciding when and how to offload model execution under
-        strict communication, delay, and resource constraints.
-      </p>
+    <div class="item">
+      <div class="carousel-placeholder">Lab photo placeholder</div>
     </div>
-    <div class="topic-card">
-      <h3>Age of Information</h3>
-      <p>
-        Information freshness in sensing and networked systems, including
-        staleness-aware control and spatio-temporal monitoring.
-      </p>
-    </div>
-    <div class="topic-card">
-      <h3>Online Learning</h3>
-      <p>
-        Regret analysis, approximation algorithms, queueing theory, stochastic
-        network calculus, and decision processes for adaptive systems.
-      </p>
+    <div class="item">
+      <div class="carousel-placeholder">Research photo placeholder</div>
     </div>
   </div>
-</section>
 
-<section class="page-section">
-  <h2>Current Status</h2>
+  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<p>
+  Jaya Prakash Champati received his PhD in Electrical and Computer
+  Engineering from the University of Toronto in 2017, after earlier degrees
+  from IIT Bombay and NIT Warangal. Before joining UVic, he was a Research
+  Assistant Professor at IMDEA Networks Institute and a postdoctoral
+  researcher at KTH Royal Institute of Technology.
+</p>
+
+<p>
+  Recent work from the group spans hierarchical inference with offload queues,
+  cost-efficient LLM shepherding, inference offloading for binary
+  classification at the edge, and freshness-aware sensing systems. We combine
+  theory, algorithms, and systems thinking to make AI practical in real
+  deployments.
+</p>
+
+<p>
+  <strong>We are happy to hear from motivated students and collaborators
+  interested in Edge AI, networking, learning, queueing, and information
+  freshness</strong> <a href="{{ site.url }}{{ site.baseurl }}/openings/">(more info)</a>.
+</p>
+
+<figure class="logo-strip">
   <p>
-    The group is actively building around edge intelligence, routing, and
-    learning-enabled networked systems. Recent work spans hierarchical
-    inference, LLM shepherding, and information freshness in distributed
-    sensing applications.
+    <img src="{{ site.url }}{{ site.baseurl }}/images/logo/lab-logo.png" style="width: 130px" alt="{{ site.title }} logo" />
   </p>
-  <p>
-    At the moment, there are no funded positions posted publicly. See the
-    <a href="{{ site.url }}{{ site.baseurl }}/openings/">Openings</a> page for the
-    latest status and contact expectations.
-  </p>
-</section>
+</figure>

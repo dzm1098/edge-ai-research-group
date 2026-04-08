@@ -7,27 +7,47 @@ permalink: /publications/
 ---
 
 <div class="col-sm-12">
-    <h1>{{page.title}}</h1>
+    <h1>{{ page.title }}</h1>
 
+    <div class="panel-group" id="accordion">
     {% for publi in site.data.publications %}
-        <section class="publication-card">
             {% assign authors = "" | split:"/" %}
             {% for author in publi.author %}
                 {% assign full_name = author.given | append: " " | append: author.family %}
                 {% assign authors = authors | push: full_name %}
             {% endfor %}
 
-            <span class="publication-meta">{{ publi.container-title }} · {{ publi.issued.date-parts[0][0] }}</span>
-            <h3>{{ publi.title }}</h3>
-            <p class="publication-authors">{{ authors | array_to_sentence_string }}</p>
-            <p>{{ publi.abstract }}</p>
-            <p class="publication-actions">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                       data-parent="#accordion"
+                       href="#collapse{{ forloop.index }}"
+                       style="color: inherit;">
+                        {{ authors | array_to_sentence_string }},
+                        "{{ publi.title }}",
+                        <b>{{ publi.container-title }}</b>
+                        ({{ publi.issued.date-parts[0][0] }})
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse{{ forloop.index }}" class="panel-collapse collapse{% if forloop.first %} in{% endif %}">
+                <div class="panel-body">
+                    <p>{{ publi.abstract }}</p>
+
                 {% if publi.URL %}
-                    <a class="btn btn-default" href="{{ publi.URL }}" target="_blank" rel="noopener">Open paper</a>
+                    <p class="publication-link">
+                        <a href="{{ publi.URL }}" target="_blank" rel="noopener">Link</a>
+                    </p>
                 {% elsif publi.DOI %}
-                    <a class="btn btn-default" href="https://doi.org/{{ publi.DOI }}" target="_blank" rel="noopener">Open paper</a>
+                    <p class="publication-link">
+                        <a href="https://doi.org/{{ publi.DOI }}" target="_blank" rel="noopener">DOI: {{ publi.DOI }}</a>
+                    </p>
                 {% endif %}
-            </p>
-        </section>
+                </div>
+            </div>
+        </div>
     {% endfor %}
+    </div>
 </div>

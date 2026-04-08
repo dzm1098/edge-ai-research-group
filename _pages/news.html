@@ -5,14 +5,11 @@ excerpt: "News and updates from the Edge AI Research Group"
 sitemap: false
 permalink: /news/
 ---
-<div class="col-sm-12">
-    <h1>{{page.title}}</h1>
+<div id="textid" class="col-sm-12">
+    <h1>{{ page.title }}</h1>
 
     {% for article in site.data.news %}
-        <section class="page-section news-entry">
-            <span class="news-date">{{ article.date }}</span>
-            <h3>{{ article.title }}</h3>
-            {{ article.content | markdownify }}
-        </section>
+        <p><strong>{{ article.date }}</strong><br>{{ article.title }}</p>
+        {{ article.content | markdownify }}
     {% endfor %}
 </div>
