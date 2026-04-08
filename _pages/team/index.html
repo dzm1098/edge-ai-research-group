@@ -28,8 +28,27 @@ permalink: /team/
     </div>
     {% endfor %}
 
-    <h2><a id="student"></a>Students</h2>
+    <h2><a id="student"></a>Graduate Students</h2>
     {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
+    {% for member in members %}
+    <div class="row team-member-card">
+        <div class="col-md-2">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                     class="img-responsive img-thumbnail"
+                     style="filter: grayscale(100%); max-width: 100px;" />
+            </a>
+        </div>
+
+        <div class="col-md-10">
+            <h4><a href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">{{ member.title }}</a></h4>
+            <p>{{ member.role }}</p>
+        </div>
+    </div>
+    {% endfor %}
+
+    <h2><a id="undergraduate"></a>Undergraduate Researchers &amp; Interns</h2>
+    {% assign members = site.posts | where: 'category', 'undergraduate' | sort: 'date' %}
     {% for member in members %}
     <div class="row team-member-card">
         <div class="col-md-2">
