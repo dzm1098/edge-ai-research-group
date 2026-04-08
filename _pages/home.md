@@ -25,14 +25,14 @@ permalink: /
   learning, and network-aware decision systems.
 </p>
 
-<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" markdown="0">
   <ol class="carousel-indicators">
     <li data-target="#carousel" data-slide-to="0" class="active"></li>
     <li data-target="#carousel" data-slide-to="1"></li>
     <li data-target="#carousel" data-slide-to="2"></li>
   </ol>
 
-  <div class="carousel-inner">
+  <div class="carousel-inner" markdown="0">
     <div class="item active">
       <img src="{{ site.url }}{{ site.baseurl }}/images/slider/slider-image.png" alt="Research group placeholder image" />
     </div>
