@@ -121,13 +121,13 @@ hr {
 }
 
 .content-wrap {
-  width: 100%;
+  width: calc(100% - 32px);
   max-width: 800px;
   border: 0;
   border-spacing: 0;
   border-collapse: separate;
   margin-right: auto;
-  margin-left: 10px;
+  margin-left: auto;
 }
 
 .profile-photo {
@@ -145,4 +145,12 @@ hr {
 
 .section-spacing {
   margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .content-wrap {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
